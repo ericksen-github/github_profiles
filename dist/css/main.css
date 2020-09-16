@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.card {
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #6f35aa 0%, #4261eb 74%);
+}
