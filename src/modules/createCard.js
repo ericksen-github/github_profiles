@@ -6,7 +6,7 @@ const createCard = (user) => {
         </div>
         <div id = "infoContainer">
           <h2>${user.name}</h2>
-          <p>${user.bio}</p>
+          <p id = "bio">${user.bio}</p>
           <ul>
             <li>${user.public_repos}<p>Repos</p></li>
             <li>${user.followers}<p>Followers</p></li>
