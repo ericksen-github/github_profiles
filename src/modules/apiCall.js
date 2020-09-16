@@ -1,3 +1,5 @@
+import { createCard } from "./createCard";
+
 const APIURL = "https://api.github.com/users/";
 
 const apiFunctions = (() => {
@@ -8,15 +10,11 @@ const apiFunctions = (() => {
         mode: "cors",
       });
 
-      sortUserData(await response.json());
+      createCard(await response.json());
     } catch (error) {
       alert("There was an error with your search.");
     }
   }
-
-  const sortUserData = (data) => {
-    console.log(data.avatar_url);
-  };
 
   return {
     newCall,
