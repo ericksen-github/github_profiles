@@ -17,6 +17,12 @@ body {
   background-image: linear-gradient(315deg, #6f35aa 0%, #4261eb 74%);
 }
 
+#imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 img {
   height: 5rem;
   border: 0.25rem solid #5b2f88;

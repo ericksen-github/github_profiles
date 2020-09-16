@@ -1,14 +1,17 @@
 const createCard = (user) => {
   const cardHTML = `
     <div class = "card">
-        <img src="${user.avatar_url}" alt = "${user.name}"
-        <div> 
-            <h2>${user.name}</h2>
-            <p>${user.bio}</p>
+        <div id = "imgContainer">
+          <img src="${user.avatar_url}" alt = "${user.name}"
         </div>
-        <div>
-            <p>Repos</p>
-            <p>${user.public_repos}</p>
+        <div id = "infoContainer">
+          <h2>${user.name}</h2>
+          <p>${user.bio}</p>
+          <ul>
+            <li>${user.public_repos}<p>Repos</p></li>
+            <li>${user.followers}<p>Followers</p></li>
+            <li>${user.following}<p>Following</p></li>
+          </ul>
         </div>
     </div>`;
 
