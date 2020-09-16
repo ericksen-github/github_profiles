@@ -9,6 +9,14 @@ body {
   background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
 }
 
+input {
+  padding: 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #7f53ac;
+}
+
 .card {
   display: flex;
   margin-top: 3rem;
