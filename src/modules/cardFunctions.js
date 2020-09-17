@@ -16,7 +16,7 @@ const cardFunctions = (() => {
               <li>${user.followers}<p>Followers</p></li>
               <li>${user.following}<p>Following</p></li>
             </ul>
-            
+
             <div id = "repoContainer"></div>
           </div>
       </div>`;
