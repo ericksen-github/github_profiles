@@ -1,4 +1,4 @@
-import { createCard } from "./createCard";
+import { cardFunctions } from "./cardFunctions";
 
 const APIURL = "https://api.github.com/users/";
 
@@ -10,7 +10,7 @@ const apiFunctions = (() => {
         mode: "cors",
       });
 
-      createCard(await response.json());
+      cardFunctions.createCard(await response.json());
     } catch (error) {
       alert("There was an error with your search.");
     }
