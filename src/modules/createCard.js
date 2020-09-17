@@ -15,7 +15,6 @@ const createCard = (user) => {
         </div>
     </div>`;
 
-  console.log(user);
   document.getElementById("main").innerHTML = cardHTML;
 };
 

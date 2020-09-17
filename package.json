@@ -1,7 +1,6 @@
 {
   "name": "github-profiles",
   "version": "1.0.0",
-  "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,5 +13,15 @@
   "devDependencies": {
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericksen-github/github_profiles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericksen-github/github_profiles/issues"
+  },
+  "homepage": "https://github.com/ericksen-github/github_profiles#readme",
+  "description": ""
 }
