@@ -66,3 +66,7 @@ li p {
   margin-left: 5px;
   font-weight: bold;
 }
+
+.repoLink {
+  display: inline-block;
+}
