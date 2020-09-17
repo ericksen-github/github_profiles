@@ -12,6 +12,7 @@ body {
 input {
   padding: 1rem;
   color: white;
+  text-align: center;
   border: none;
   border-radius: 0.5rem;
   background-color: #7f53ac;
@@ -43,7 +44,7 @@ img {
 
 #infoContainer h2 {
   font-size: 1.25rem;
-  font-style: bold;
+  font-weight: bold;
 }
 
 #infoContainer #bio {
@@ -55,4 +56,13 @@ ul {
   justify-content: space-between;
   list-style-type: none;
   margin-top: 1rem;
+}
+
+li {
+  display: flex;
+}
+
+li p {
+  margin-left: 5px;
+  font-weight: bold;
 }
