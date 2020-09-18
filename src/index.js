@@ -9,5 +9,4 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const user = search.value;
   apiFunctions.newCall(user);
-  search.value = ""; // clears search box after call
 });

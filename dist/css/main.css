@@ -18,11 +18,17 @@ input {
   background-color: #7f53ac;
 }
 
+/* placeholder text color needed to contrast better against background */
+::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+}
+
 .card {
   display: flex;
-  margin-top: 3rem;
+  margin: 3rem;
   padding: 2rem;
-  max-width: 80vw;
+  max-width: 800px;
   color: white;
   border-radius: 1rem;
   background-color: #7f53ac;
