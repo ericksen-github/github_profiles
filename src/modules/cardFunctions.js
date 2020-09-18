@@ -2,6 +2,8 @@ const APIURL = "https://api.github.com/users/";
 
 const cardFunctions = (() => {
   const createCard = (user) => {
+    fixNulls(user);
+
     const cardHTML = `
       <div class = "card">
           <div id = "imgContainer">
@@ -23,6 +25,17 @@ const cardFunctions = (() => {
 
     document.getElementById("main").innerHTML = cardHTML;
     getRepos(user.login);
+  };
+
+  // checks for null values on name and bio
+  // and swaps for login name or empty bio instead
+  const fixNulls = (user) => {
+    if (user.name == null) {
+      user.name = user.login;
+    }
+    if (user.bio == null) {
+      user.bio = "";
+    }
   };
 
   async function getRepos(userName) {
