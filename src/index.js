@@ -10,3 +10,5 @@ form.addEventListener("submit", (e) => {
   const user = search.value;
   apiFunctions.newCall(user);
 });
+
+apiFunctions.newCall("ericksen-github");

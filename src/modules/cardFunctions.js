@@ -5,7 +5,7 @@ const cardFunctions = (() => {
     const cardHTML = `
       <div class = "card">
           <div id = "imgContainer">
-            <img src="${user.avatar_url}" alt = "${user.name}"
+            <img src="${user.avatar_url}" alt = "${user.name}" />
           </div>
           <div id = "infoContainer">
             <h2>${user.name}</h2>

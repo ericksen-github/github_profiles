@@ -83,7 +83,7 @@ li {
 }
 
 li p {
-  margin-left: 8px;
+  margin: 0 1.25rem 0 0.6rem;
   font-weight: bold;
 }
 
@@ -101,4 +101,50 @@ li p {
 #repoContainer {
   opacity: 0;
   animation: slide-up 1s ease 0.5s forwards;
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  #infoContainer {
+    text-align: center;
+  }
+
+  ul {
+    justify-content: center;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  input {
+    padding: 0.9rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  #infoContainer h2 {
+    font-size: 1rem;
+  }
+
+  #infoContainer #bio,
+  li {
+    font-size: 0.9rem;
+  }
+
+  .repoLink {
+    margin: 0 0.3rem 0.3rem 0;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.6rem;
+  }
 }
