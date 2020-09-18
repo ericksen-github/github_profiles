@@ -2,6 +2,11 @@ const APIURL = "https://api.github.com/users/";
 
 const cardFunctions = (() => {
   const createCard = (user) => {
+    if (user.message == "Not Found") {
+      handleNotFound();
+      return;
+    }
+
     fixNulls(user);
 
     const cardHTML = `
@@ -38,11 +43,23 @@ const cardFunctions = (() => {
     }
   };
 
+  // handles when input was not a valid user name
+  const handleNotFound = () => {
+    const cardHTML = `
+      <div class = "card">
+        <p>User not found. Check the spelling or try a different user.</p>
+      </div>
+    `;
+
+    document.getElementById("main").innerHTML = cardHTML;
+  };
+
   async function getRepos(userName) {
     const response = await fetch(APIURL + userName + "/repos");
     addReposToCard(await response.json());
   }
 
+  // adds user repo names as links to card
   const addReposToCard = (repos) => {
     const repoContainer = document.getElementById("repoContainer");
 
