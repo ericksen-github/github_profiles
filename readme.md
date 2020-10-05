@@ -6,3 +6,7 @@ A project that allows a user to search for a github profile and returns basic in
 
 Inspired by a project from Florin Pop on Youtube.
 https://www.youtube.com/watch?v=dtKciwk_si4&t=20395s
+
+## URL
+
+Check it out [here](https://ericksen-github.github.io/github_profiles/)
