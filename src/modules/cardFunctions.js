@@ -12,10 +12,14 @@ const cardFunctions = (() => {
     const cardHTML = `
       <div class = "card">
           <div id = "imgContainer">
-            <img src="${user.avatar_url}" alt = "${user.name}" />
+            <a href  = ${user.html_url} >
+              <img src="${user.avatar_url}" alt = "${user.name}" />
+            </a>
           </div>
           <div id = "infoContainer">
-            <h2>${user.name}</h2>
+            <a id = "nameLink" href  = ${user.html_url} >
+              <h2>${user.name}</h2>
+            </a>
             <p id = "bio">${user.bio}</p>
 
             <ul>
